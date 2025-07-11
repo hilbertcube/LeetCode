@@ -209,4 +209,8 @@ ostream& operator<<(ostream& os, priority_queue<T,Container,Compare> pq) {
     return os;
 }
 
+void printBool(bool input) {
+    cout << ((input)? "True" : "False") << endl;
+}
+
 #endif

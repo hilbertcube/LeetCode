@@ -43,4 +43,4 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
-// .\run.ps1 -Name 0125_valid_palindrome
+// .\scripts\run.ps1 -p 0125_valid_palindrome

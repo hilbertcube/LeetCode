@@ -1,5 +1,5 @@
 param(
-  [Parameter(Mandatory=$true)][string]$Name
+  [Parameter(Mandatory=$true)][string]$p
 )
 
 # ensure bin/ exists
@@ -8,11 +8,11 @@ if (!(Test-Path -Path "bin")) {
 }
 
 # compile
-g++ "$Name.cpp" -o "bin\$Name.exe"
+g++ "$p.cpp" -o "bin\$p.exe"
 if ($LASTEXITCODE -ne 0) {
   Write-Error "Compilation failed (g++ exited with code $LASTEXITCODE)"
   exit $LASTEXITCODE
 }
 
 # run
-& "bin\$Name.exe"
+& "bin\$p.exe"

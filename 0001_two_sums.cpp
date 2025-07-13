@@ -39,4 +39,4 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
-// .\run.ps1 -Name 0001_two_sums
+// .\run.ps1 -p 0001_two_sums
